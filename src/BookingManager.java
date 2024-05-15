@@ -84,7 +84,7 @@ public class BookingManager {
         }
     }
 
-    private void viewBookings(Account account) {
+    void viewBookings(Account account) {
         List<String> userBookings = bookings.get(account.getUsername());
         if (userBookings != null && !userBookings.isEmpty()) {
             System.out.println("Your bookings:");

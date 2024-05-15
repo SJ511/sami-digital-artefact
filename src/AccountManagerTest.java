@@ -27,6 +27,7 @@ public class AccountManagerTest {
     @Test
     public void testValidatePasswordInvalid() {
         assertFalse(accountManager.validatePassword("password"));
+        assertFalse(accountManager.validatePassword("sami"));
     }
 
     @Test
